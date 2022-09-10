@@ -25,6 +25,11 @@ const config: HardhatUserConfig = {
       accounts: [PRIVATE_KEY],
       chainId: 4,
     },
+    goerli: {
+      url: process.env.GOERLI_RPC_URL,
+      accounts: [PRIVATE_KEY],
+      chainId: 5,
+    },
   },
   gasReporter: {
     enabled: false,

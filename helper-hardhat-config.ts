@@ -50,6 +50,22 @@ export const networkConfig: networkConfigInfo = {
     waitBlockConfirmations: 6,
     ethPriceFeedAddress: "0x8A753747A1Fa494EC906cE90E9f37563A8AF630e",
   },
+  5: {
+    ethUsdPriceFeed: "0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e",
+    blockConfirmation: 6,
+    chainId: 4,
+    name: "goerli",
+    subscriptionId: "1093",
+    gasLane:
+      "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15", // 30 gwei
+    keepersUpdateInterval: "30",
+    raffleEntranceFee: "100000000000000000", // 0.1 ETH
+    callbackGasLimit: "2500000", // 500,000 gas
+    vrfCoordinatorV2: "0x2Ca8E0C643bDe4C2E08ab1fA0da3401AdAD7734D",
+    verifyBlockNumber: 6,
+    waitBlockConfirmations: 6,
+    ethPriceFeedAddress: "0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e",
+  },
 }
 
 export const developmentChainId = [31337]
