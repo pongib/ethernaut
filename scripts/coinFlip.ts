@@ -83,9 +83,9 @@ const main = async () => {
 
   console.log(
     `
-      guess ${receipt.events![0].args!.guess}
-      blockNumber ${receipt.events![0].args!.blockNumber}
-    `
+    guess ${receipt.events![0].args!.guess}
+    blockNumber ${receipt.events![0].args!.blockNumber}
+  `
   )
 
   console.log(
