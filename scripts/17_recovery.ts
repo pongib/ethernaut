@@ -34,7 +34,7 @@ const main = async () => {
 
   const tx = await contract.pwn(targetAddress, { gasLimit: 100000 })
 
-  console.log(await (await provider.getBalance(targetAddress)).toString())
+  console.log((await provider.getBalance(targetAddress)).toString())
 
   try {
     const receipt = await tx.wait()
@@ -48,7 +48,7 @@ const main = async () => {
     )
   }
 
-  console.log(await provider.getBalance(targetAddress).toString())
+  console.log((await provider.getBalance(targetAddress)).toString())
 }
 
 main()
