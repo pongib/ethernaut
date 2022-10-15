@@ -12,9 +12,6 @@ contract Denial {
             )
         );
         if (!success) revert CallNotSuccess(data);
-
-        (success, data) = target.call(abi.encodeWithSignature("withdraw()"));
-        if (!success) revert CallNotSuccess(data);
     }
 
     receive() external payable {
