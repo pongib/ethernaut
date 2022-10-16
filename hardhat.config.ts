@@ -23,6 +23,12 @@ const config: HardhatUserConfig = {
     ],
   },
   networks: {
+    // hardhat: {
+    //   forking: {
+    //     url: process.env.GOERLI_RPC_URL!,
+    //     // blockNumber: 14390000,
+    //   },
+    // },
     rinkeby: {
       url: process.env.RINKEBY_RPC_URL,
       accounts: [PRIVATE_KEY],
