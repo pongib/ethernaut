@@ -56,4 +56,3 @@ main()
     console.log(error)
     process.exit(1)
   })
-0x000000000000000000000000
